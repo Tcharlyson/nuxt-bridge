@@ -1,5 +1,5 @@
 import { Meta, Story } from '@storybook/vue'
-import Button, { ButtonProps } from '@/components/Button.vue'
+import Button, { ButtonProps } from '../components/Button.vue'
 
 export default {
   title: 'Buttons/Button',
