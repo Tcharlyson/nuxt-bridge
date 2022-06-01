@@ -15,14 +15,17 @@
     </v-col>
     <v-col>
       <h3 class="mb-3">Vuetify</h3>
-      <Button label="Bouton custom"></Button>
+      <!-- Props type checking -->
+      <Button label="2"></Button>
+      <!-- Invalid props -->
+      <Button :label="2"></Button>
     </v-col>
     <v-col cols="12">
       <v-divider></v-divider>
     </v-col>
     <v-col>
       <h3 class="mb-3">Pinia</h3>
-      {{ userStore }}
+      {{ userStore.posts }}
     </v-col>
   </v-row>
 </template>
