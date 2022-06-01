@@ -60,6 +60,6 @@
     "stylelint-config-standard": "^24.0.0"
   },
   "resolutions": {
-    "ufo": "^0.7.9"
+    "ufo": "^0.8.4"
   }
 }
