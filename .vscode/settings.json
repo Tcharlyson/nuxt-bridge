@@ -1,0 +1,7 @@
+{
+  "i18n-ally.localesPaths": ["locales"],
+  "i18n-ally.keepFulfilled": true,
+  "i18n-ally.sourceLanguage": "fr",
+  "i18n-ally.displayLanguage": "fr",
+  "i18n-ally.keystyle": "nested"
+}

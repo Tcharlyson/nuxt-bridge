@@ -7,6 +7,7 @@ This repository intend to give an easy start with a fully setup Nuxt-Bridge work
 - Typescript
 - Axios
 - Storybook
+- Internationalization
 
 ## VSCode Setup
 
@@ -15,6 +16,7 @@ Before anything, do not forget to install the recommended extensions :
 - ESLint
 - Prettier - Code formatter
 - TSLint
+- i18n Ally (configured in .vscode folder) : Helps translate content
 - TypeScript Vue Plugin (Volar) :gun:
 - Vue Language Features (Volar) :gun:
 
