@@ -8,6 +8,7 @@
         <li>Vuetify</li>
         <li>Typescript</li>
         <li>Pinia</li>
+        <li>Internationalisation</li>
       </ul>
     </v-col>
     <v-col cols="12">
@@ -24,6 +25,10 @@
       <v-divider></v-divider>
     </v-col>
     <v-col>
+      <h3 class="mb-3">Internationalisation</h3>
+      <p>Traduction : {{ $t('hello') }}</p>
+    </v-col>
+    <v-col>
       <h3 class="mb-3">Pinia</h3>
       {{ userStore.posts }}
     </v-col>
@@ -34,6 +39,12 @@
 import { usePostStore } from '~/store/post'
 
 export default defineComponent({
+  nuxtI18n: {
+    paths: {
+      en: '/tryout',
+      fr: '/essai',
+    },
+  },
   name: 'TryoutPage',
   setup() {
     const userStore = usePostStore()

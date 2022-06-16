@@ -40,6 +40,8 @@ export default defineNuxtConfig({
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    // https://i18n.nuxtjs.org/
+    '@nuxtjs/i18n',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -77,6 +79,27 @@ export default defineNuxtConfig({
       })
       return config
     },
+  },
+
+  i18n: {
+    strategy: 'prefix',
+    defaultLocale: 'fr',
+    langDir: '~/locales/',
+    // Make sure that default locale is the last one!
+    locales: [
+      {
+        code: 'en',
+        iso: 'en-US',
+        file: 'en.json',
+        name: 'English',
+      },
+      {
+        code: 'fr',
+        iso: 'fr-FR',
+        file: 'fr.json',
+        name: 'Français',
+      },
+    ],
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
